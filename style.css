@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #FDF8F2;
+    color: #2B2B2B;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #71513a;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.note {
+    font-style: italic;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #D9CBB8;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #71513a;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+} 
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D9CBB8;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;
+    text-align: center; 
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2d2017;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.carte {
+    background-color: #FFFFFF;
+    border: 1px solid #D9CBB8;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.carte h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.prix {
+    font-weight: bold;
+    color: #71513a;
+    margin-bottom: 0;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+@media (min-width: 60rem) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}

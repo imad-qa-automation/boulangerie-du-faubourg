@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous joindre | Boulangerie du Faubourg</title>
+<meta name="description" content="Commandez par téléphone ou écrivez-nous. Boulangerie du Faubourg, avenue des Hôtes, Québec.">    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>Boulangerie du Faubourg</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos produits</a></li>
+                <li><a href="contact.html" aria-current="page">Nous joindre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>  
+        <section id="joindre">
+            <h1>Nous joindre</h1>
+            <p>Pour commander, appelez-nous au <a href="tel:+14185556070">418 555-6070</a>.</p>
+            <h2>Ou écrivez-nous</h2>
+            <form method="post">
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="courriel">Votre courriel</label>
+                <input type="email" id="courriel" name="courriel" required>
+
+                <label for="telephone">Votre téléphone (facultatif)</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Boulangerie du Faubourg</p>
+        <p>3658, avenue des Hôtes, local 5, Québec (Québec) G1R 1A1</p>
+    </footer>
+    
+</body>
+
+</html>
