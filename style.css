@@ -72,7 +72,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-} 
+}
 
 header {
     display: flex;
@@ -92,9 +92,9 @@ header p {
 
 footer {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 0.5rem;
-    text-align: center; 
+    text-align: center;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #2d2017;
@@ -160,17 +160,23 @@ main a {
     color: #71513a;
 }
 
+footer a {
+    color: inherit;
+}
+
 @media (min-width: 60rem) {
     header {
         flex-direction: row;
         justify-content: space-between;
         padding: 1rem 2rem;
     }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
     }
+
     h1 {
         font-size: 2.5rem;
     }
