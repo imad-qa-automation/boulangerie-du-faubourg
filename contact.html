@@ -26,13 +26,15 @@
             <p>Pour commander, appelez-nous au <a href="tel:+14185556070">418 555-6070</a>.</p>
             <h2>Ou écrivez-nous</h2>
             <form name="contact" method="post" data-netlify="true">
+                
+                <input type="hidden" name="subject" data-remove-prefix value="Nouveau message du site de la Boulangerie du Faubourg">
 
                 <label for="nom">Votre nom</label>
                 <input type="text" id="nom" name="nom" required>
-
+                
                 <label for="courriel">Votre courriel</label>
-                <input type="email" id="courriel" name="courriel" required>
-
+                <input type="email" id="courriel" name="email" required>
+                
                 <label for="telephone">Votre téléphone (facultatif)</label>
                 <input type="tel" id="telephone" name="telephone">
 
