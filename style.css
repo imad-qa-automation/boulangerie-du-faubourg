@@ -10,6 +10,10 @@ body {
     color: #2B2B2B;
     line-height: 1.6;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 h1,
@@ -25,6 +29,8 @@ h1 {
 main {
     max-width: 60rem;
     margin: 0 auto;
+    flex: 1;
+    width: 100%;
 }
 
 img {
@@ -128,6 +134,30 @@ footer p {
 
 nav a[aria-current="page"] {
     font-weight: bold;
+}
+
+button {
+    background-color: #71513a;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3f2c;
+}
+
+header p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main a {
+    color: #71513a;
 }
 
 @media (min-width: 60rem) {
